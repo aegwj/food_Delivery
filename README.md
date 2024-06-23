@@ -5,7 +5,7 @@
 前端技术栈： React.js、JavaScript、CSS、react-router-dom、axios
 后端技术栈： Express、MongoDB（托管于 cloud.mongodb.com）
 API 调试工具： Thunder Client
-支付工具： Stripe
+支付工具： Stripe   测试卡号4000001560000002  国家中国
 项目实现内容和技术亮点包括：
 
 前端开发：
