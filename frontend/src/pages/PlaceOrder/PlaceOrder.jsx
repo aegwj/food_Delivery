@@ -65,7 +65,7 @@ const PlaceOrder = () => {
     try {
       // 发送 POST 请求，提交订单
       let response = await axios.post(
-        "http://localhost:4000/api/order/place",
+        url+"/api/order/place",
         orderData,
         { headers: { token } } // 在请求头中添加 token
       );
