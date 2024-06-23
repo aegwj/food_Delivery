@@ -20,7 +20,6 @@ const Verify = () => {
     const response = await axios.post(url+"/api/order/verify",
       { success, orderId }
     );  // 发送 POST 请求到 /api/order/verify
-     console.log(success, orderId);
     if(response.data.success) {
       navigate("/myorders");  // 如果验证成功，导航到 '/myorders'
     }
