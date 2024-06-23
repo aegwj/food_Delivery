@@ -15,7 +15,7 @@ const stripe = new Stripe(
 // 处理下单逻辑
 const placeOrder = async (req, res) => {
 
-  const frontend_url = "https://food-delivery-frontend-mjq5.onrender.com/";
+  const frontend_url = "https://food-delivery-frontend-mjq5.onrender.com";
 
   try {
     // 创建新的订单对象
