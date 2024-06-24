@@ -13,7 +13,7 @@ const Verify = () => {
   const orderId = searchParams.get("orderId");
   const { url } = useContext(StoreContext);  // 从 StoreContext 中获取 url
   const navigate = useNavigate();  // 获取导航函数
-  
+   console.log(success, orderId);
   // 定义一个异步函数 verifyPayment，用于验证支付
   const verifyPayment = async (success, orderId) => {
     const response = await axios.post("https://food-delivery-i62m.onrender.com/api/order/verify",
