@@ -80,7 +80,7 @@ const placeOrder = async (req, res) => {
 // 验证订单的支付状态
 const verifyOrder = async (req, res) => {
   // 从请求的查询参数中获取 orderId 和 success
-  const { orderId, success } = req.body;
+  const { orderId, success } = req.query;
   
   try {
     // 如果 success 等于 "true"
