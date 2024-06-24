@@ -15,7 +15,7 @@ const Verify = () => {
   const navigate = useNavigate();  // 获取导航函数
   
   // 定义一个异步函数 verifyPayment，用于验证支付
-  const verifyPayment = async () => {
+  const verifyPayment = async (success, orderId) => {
     const response = await axios.post(url+"/api/order/verify",
       { success, orderId }
     );  // 发送 POST 请求到 /api/order/verify
